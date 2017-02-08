@@ -1,0 +1,11 @@
+<h1>Vehicle Inventory</h1>
+<ul>
+  @foreach(string car in Model)
+  {
+    <li>@car</li>
+  }
+</ul>
+<span><a href="/">Add another vehicle</a></span>
+<form action="/clear_vehicles" method="post">
+  <button type="submit" name="button">Remove All Vehicles!</button>
+</form>
